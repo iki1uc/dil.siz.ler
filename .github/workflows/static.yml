@@ -10,8 +10,15 @@ root:
 
   assign:
     op: true
-    iki1uc: true
+    iki1uc_de: true
+    iki1uc_tr: true
+    iki1uc_en: true
     iki7uc: true
     iki2li: true
+
+  lang:
+    - de
+    - tr
+    - en
 
   start: first
