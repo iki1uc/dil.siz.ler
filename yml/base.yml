@@ -1,2 +1,6 @@
 base: true
 
+lang:
+  - de
+  - tr
+  - en
