@@ -1,20 +1,22 @@
-root: NEU
+root: worf
 
-neu:
-  mode: active
-  axis: 3x3
-  inherits: none
-
-dil.siz.ler:
-  enabled: true
-  source: /modules/dil-siz-ler/
-  run: full
+system:
+  type: geometric
+  mode: 3x3
+  active: true
 
 matrix:
-  - [dil, siz, ler]
-  - [rew, me,  for]
-  - [gen, tol, ech]
+  row1: [dil, siz, ler]
+  row2: [rew, me, for]
+  row3: [gen, tol, ech]
 
-echo:
-  state: open
-  return: true
+dil:
+  axis: start
+siz:
+  axis: line
+ler:
+  axis: return
+
+run:
+  full: true
+  echo: open
