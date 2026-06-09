@@ -1,5 +1,6 @@
 root:
   start: true
+
   trigger:
     - iki1uc
     - iki7uc
