@@ -1,23 +1,20 @@
-root: dil.siz.ler
+root: NEU
+
+neu:
+  mode: active
+  axis: 3x3
+  inherits: none
+
+dil.siz.ler:
+  enabled: true
+  source: /modules/dil-siz-ler/
+  run: full
 
 matrix:
   - [dil, siz, ler]
   - [rew, me,  for]
   - [gen, tol, ech]
 
-dil:
-  mode: open
-  axis: start
-
-siz:
-  mode: cut
-  axis: line
-
-ler:
-  mode: echo
-  axis: return
-
-run:
-  full: true
-  rotation: forward
-  echo: enabled
+echo:
+  state: open
+  return: true
