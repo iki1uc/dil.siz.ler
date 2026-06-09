@@ -1,1 +1,18 @@
+root:
+  geometry: square
+  split: 2x triangle
+  respo: 4
+
+  paths:
+    raw: ./raw/
+    yml: ./yml/
+    core: ./comet/item_core.json
+
+  assign:
+    op: true
+    iki1uc: true
+    iki7uc: true
+    iki2li: true
+
+  start: first
 
