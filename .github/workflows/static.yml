@@ -1,24 +1,23 @@
-root:
-  geometry: square
-  split: 2x triangle
-  respo: 4
+root: dil.siz.ler
 
-  paths:
-    raw: ./raw/
-    yml: ./yml/
-    core: ./comet/item_core.json
+matrix:
+  - [dil, siz, ler]
+  - [rew, me,  for]
+  - [gen, tol, ech]
 
-  assign:
-    op: true
-    iki1uc_de: true
-    iki1uc_tr: true
-    iki1uc_en: true
-    iki7uc: true
-    iki2li: true
+dil:
+  mode: open
+  axis: start
 
-  lang:
-    - de
-    - tr
-    - en
+siz:
+  mode: cut
+  axis: line
 
-  start: first
+ler:
+  mode: echo
+  axis: return
+
+run:
+  full: true
+  rotation: forward
+  echo: enabled
