@@ -1,0 +1,14 @@
+root:
+  start: true
+  trigger:
+    - iki1uc
+    - iki7uc
+    - iki2li
+
+  pipeline:
+    prepare: iki1uc
+    build: iki7uc
+    distribute: iki2li
+
+  output: yml/
+  visual: dil.siz.ler
