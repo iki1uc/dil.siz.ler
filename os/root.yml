@@ -1,1 +1,23 @@
+root: worf
+
+system:
+  type: geometric
+  mode: 3x3
+  active: true
+
+matrix:
+  row1: [dil, siz, ler]
+  row2: [rew, me, for]
+  row3: [gen, tol, ech]
+
+dil:
+  axis: start
+siz:
+  axis: line
+ler:
+  axis: return
+
+run:
+  full: true
+  echo: open
 
