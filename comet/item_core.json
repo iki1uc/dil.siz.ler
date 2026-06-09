@@ -1,7 +1,7 @@
 {
   "item_core": {
-    "char":  { "type": "unit",    "size": 1 },
-    "word":  { "type": "group",   "size": "1-n" },
+    "char":  { "type": "unit", "size": 1 },
+    "word":  { "type": "group", "size": "1-n" },
     "block": { "type": "cluster", "size": "n-n" }
   }
 }
