@@ -9,4 +9,3 @@ root:
     core: ./item_core.json
 
   start: first
-
