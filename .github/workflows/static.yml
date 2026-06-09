@@ -4,8 +4,8 @@ root:
   respo: 4
 
   paths:
-    raw: ./RAW/
-    yml: ./YML/
+    raw: ./raw/
+    yml: ./yml/
     core: ./comet/item_core.json
 
   assign:
