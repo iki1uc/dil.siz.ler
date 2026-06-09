@@ -1,1 +1,12 @@
+root:
+  geometry: square
+  split: 2x triangle
+  respo: 4
+
+  paths:
+    raw: ./RAW/
+    yml: ./YML/
+    core: ./item_core.json
+
+  start: first
 
