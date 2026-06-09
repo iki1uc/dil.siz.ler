@@ -1,15 +1,17 @@
 root:
-  start: true
+  geometry: square
+  split: 2x triangle
+  respo: 4
 
-  trigger:
-    - iki1uc
-    - iki7uc
-    - iki2li
+  paths:
+    raw: ./RAW/
+    yml: ./YML/
+    core: ./comet/item_core.json
 
-  pipeline:
-    prepare: iki1uc
-    build: iki7uc
-    distribute: iki2li
+  assign:
+    op: true
+    iki1uc: true
+    iki7uc: true
+    iki2li: true
 
-  output: yml/
-  visual: dil.siz.ler
+  start: first
