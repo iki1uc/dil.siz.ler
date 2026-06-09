@@ -1,7 +1,7 @@
 {
-  "anchor": "UA-v1.0",
-  "raw": "",
-  "mat": "",
-  "out": ""
+  "item_core": {
+    "char": { "type": "unit", "size": 1 },
+    "word": { "type": "group", "size": "1-n" },
+    "block": { "type": "cluster", "size": "n-n" }
+  }
 }
-
