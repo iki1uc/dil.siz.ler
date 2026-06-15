@@ -9,5 +9,8 @@ jobs:
   final:
     runs-on: ubuntu-latest
     steps:
-      - name: Finalisierung an OP
-        run: echo "dil.siz.ler → OP: Final-Respo abgeschlossen"
+      - name: dil.siz.ler empfängt Kern-ID
+        run: echo "dil.siz.ler: Kern-ID empfangen"
+
+      - name: dil.siz.ler OK + VERIFY
+        run: echo "dil.siz.ler: OK – VERIFY – Dienst aktiv"
