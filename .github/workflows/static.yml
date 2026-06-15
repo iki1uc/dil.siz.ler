@@ -1,16 +1,17 @@
-name: dil-siz-ler-Final
+name: respo-${{ github.repository }}
 
 on:
   workflow_run:
-    workflows: ["iki2li-Identitaet"]
+    workflows: ["OP-Master"]
     types: [completed]
 
 jobs:
-  final:
+  modul_ok:
     runs-on: ubuntu-latest
-    steps:
-      - name: dil.siz.ler empfängt Kern-ID
-        run: echo "dil.siz.ler: Kern-ID empfangen"
 
-      - name: dil.siz.ler OK + VERIFY
-        run: echo "dil.siz.ler: OK – VERIFY – Dienst aktiv"
+    steps:
+      - name: respo empfängt OP Kern-ID
+        run: echo "respo: OP Kern-ID empfangen – Modul = ${{ github.repository }}"
+
+      - name: respo OK + VERIFY
+        run: echo "respo: OK – VERIFY – Dienst aktiv – Modul = ${{ github.repository }}"
