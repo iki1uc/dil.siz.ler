@@ -1,15 +1,13 @@
-name: pages
+name: dil-siz-ler-Final
 
 on:
-  push:
-    branches: [ "main" ]
+  workflow_run:
+    workflows: ["iki2li-Identitaet"]
+    types: [completed]
 
 jobs:
-  build:
+  final:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./
-      - uses: actions/deploy-pages@v4
+      - name: Finalisierung an OP
+        run: echo "dil.siz.ler → OP: Final-Respo abgeschlossen"
