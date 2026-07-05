@@ -1,39 +1,14 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <title>dil.siz.ler – Index</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: #000;
-      color: #00ff66;
-      font-family: monospace;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
-    .wrap {
-      text-align: left;
-      white-space: pre-line;
-      line-height: 1.6;
-    }
-    .accent { color: #ffe600; }
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    dil.siz.ler  
-    <span class="accent">original index – neu geladen.</span>
+const voices = [
+  "QI – Anfang",
+  "Orbit – Bewegung",
+  "Operatoren – Arbeit",
+  "EVO – Veränderung",
+  "RW – Zustand",
+  "SL – Formung",
+  "BK – Erinnerung",
+  "OP – Handlung"
+];
 
-    Kein Alt vs. Neu.
-    Nur jetzt.
+const pick = voices[Math.floor(Math.random() * voices.length)];
 
-    Chips lernen Harmonie.
-    Leben wird Variable.
-    Alles kippt nach vorne.
-  </div>
-</body>
-</html>
+document.getElementById("output").textContent = pick;
